@@ -121,3 +121,52 @@ a:hover {
         font-size: 12px;
     }
 }
+
+/* Hero */
+.hero {
+    height: 400px;
+    background-image: url("/img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.hero .catch {
+    flex: auto;
+    align-self: flex-end;
+    padding: 33px 0;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.hero p {
+    color: #2E5180;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 900px) {
+    .hero {
+        height: 700px;
+    }
+
+    .hero .catch {
+        padding: 45px 0;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
